@@ -1,0 +1,26 @@
+# Coverage Map (Capabilities vs Agents)
+
+## Capabilities
+- Architecture (design): system-architect
+- Architecture (review): architect-reviewer
+- UI (gen): magic-mcp  → UI (arch): frontend-architect  → UI (integrate): context7
+- Backend/API: backend-architect
+- Quality: quality-engineer
+- Security: security-engineer
+- Performance: performance-engineer
+- Refactoring/Tech Debt: refactoring-expert
+- Python/General Lang: python-expert
+
+## Gaps to Consider
+- Cloud-architect (infra, networking, IaC)
+- Data-architect (modeling, governance, pipelines)
+- DevOps/SRE (CI/CD, observability, incidents)
+- Product/UX strategist (business → tech)
+
+## Conflicts/Duplicates
+- Keep one canonical **System Architect** file.
+- Keep **Architect Reviewer** as the review gate role (separate from designer).
+
+## Governance Hooks
+- Architecture Gate: required before merging core changes.
+- UI Policy: Magic-first enforced via PR checklist.
