@@ -1,0 +1,41 @@
+[
+  {
+    "id": "P-2501",
+    "serial": 8261,
+    "po": "PO-1001",
+    "customer": "United Rentals",
+    "model": "DD-6 SAFE",
+    "stage": "Fabrication",
+    "priority": "High",
+    "powderColor": "RAL 5010",
+    "lastUpdate": "2025-10-14T10:00:00Z",
+    "value": 29000,
+    "scheduledEnd": "2025-10-28T17:00:00Z"
+  },
+  {
+    "id": "P-2502",
+    "serial": 3475,
+    "po": "PO-1002",
+    "customer": "Sunbelt Rentals",
+    "model": "RL200-SAFE",
+    "stage": "Not Started",
+    "priority": "Standard",
+    "powderColor": "RAL 9005",
+    "lastUpdate": "2025-10-12T08:30:00Z",
+    "value": 49500,
+    "scheduledEnd": "2025-11-05T17:00:00Z"
+  },
+  {
+    "id": "P-2503",
+    "serial": 5920,
+    "po": "PO-1003",
+    "customer": "Herc Rentals",
+    "model": "HC-150",
+    "stage": "Testing",
+    "priority": "High",
+    "powderColor": "Safety Yellow",
+    "lastUpdate": "2025-10-14T13:45:00Z",
+    "value": 36000,
+    "scheduledEnd": "2025-10-16T17:00:00Z"
+  }
+]
