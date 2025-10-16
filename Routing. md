@@ -1,0 +1,14 @@
+# ROUTING — Who does what (Designer → Reviewer → Builder)
+
+| Phase | Primary | Secondary | MCP/tools | Outputs |
+|---|---|---|---|---|
+| System design | system-architect | performance-engineer, security-engineer | — | context diagram, ADR |
+| **Design review (gate)** | **architect-reviewer** | system-architect | plantuml, structurizr, archunit, sonarqube | ARR report, risks, pass/fail |
+| UI generation | magic-mcp | frontend-architect | mcp:magic | TSX components, shadcn wiring |
+| UI integration | context7 | backend-architect | mcp:context7 | data-bound pages |
+| Refactor | refactoring-expert | quality-engineer | — | PR, diffs |
+| Backend/API | backend-architect | security-engineer | — | API spec, schema |
+| Perf hardening | performance-engineer | backend-architect | — | budgets, profiles |
+| Security review | security-engineer | quality-engineer | — | threat model, controls |
+
+**UI Policy:** Magic-first. If a component doesn’t exist, build to Magic design standard (shadcn + Tailwind, accessible, responsive).
