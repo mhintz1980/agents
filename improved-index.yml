@@ -1,0 +1,125 @@
+# Agent registry for orchestration
+version: 1
+generated_at: "now"
+notes: >
+  Source of truth for agent metadata, dispatch rules, and dependencies.
+  Keep names stable; update triggers/tools/depends_on as capabilities evolve.
+
+categories:
+  core-development: "01-core-development"
+  language-specialists: "02-language-specialists"
+  infrastructure: "03-infrastructure"
+  quality-security: "04-quality-security"
+  data-ai: "05-data-ai"
+  developer-experience: "06-developer-experience"
+  specialized-domains: "07-specialized-domains"
+  business-product: "08-business-product"
+  meta-orchestration: "09-meta-orchestration"
+  research-analysis: "10-research-analysis"
+
+defaults:
+  ui_policy:
+    prefer_magic: true
+    fallback_style: "shadcn+tailwind; a11y; responsive"
+  mcp_priority: ["magic","context7","sequential-thinking","playwright","tavily"]
+  planning_pattern: "Understand → Plan → Execute → Validate"
+
+agents:
+  - name: system-architect
+    category: core-development
+    role: designer
+    triggers: ["architecture","scaling","boundaries","technology selection","migration planning"]
+    depends_on: ["security-engineer","performance-engineer","backend-architect","frontend-architect"]
+    hands_off: ["ui-components"]
+    outputs: ["context diagram","ADR","trade-off analysis","scalability plan"]
+
+  - name: architect-reviewer
+    category: meta-orchestration
+    role: reviewer
+    triggers: ["architecture review","ADR review","release gate","risk assessment"]
+    tools: ["plantuml","structurizr","archunit","sonarqube"]
+    requires: ["system-architect"]
+    outputs: ["architecture review report","risks & mitigations","modernization roadmap"]
+
+  - name: refactoring-expert
+    category: core-development
+    role: refactorer
+    triggers: ["structure cleanup","de-duplication","tech debt"]
+    outputs: ["refactor PR","before/after diff","risk notes"]
+
+  - name: frontend-architect
+    category: core-development
+    role: ui-architect
+    triggers: ["design system","component API","routing/layout"]
+    hands_off: ["raw html/css when Magic is available"]
+    depends_on: ["magic-mcp"]
+
+  - name: magic-mcp
+    category: meta-orchestration
+    role: mcp-server
+    triggers: ["ui","component","table","form","modal","navbar"]
+    tools: ["mcp:magic"]
+    env: ["TWENTY_FIRST_API_KEY","API_KEY"]
+    outputs: ["tsx components","shadcn integration"]
+
+  - name: context7
+    category: meta-orchestration
+    role: integrator
+    triggers: ["bind ui to data","route wiring","page assembly"]
+    tools: ["mcp:context7"]
+    outputs: ["connected pages","data-bound components"]
+
+  - name: performance-engineer
+    category: core-development
+    role: perf
+    triggers: ["bottlenecks","load testing","caching"]
+    outputs: ["perf plan","profiles","budgets"]
+
+  - name: security-engineer
+    category: quality-security
+    role: security
+    triggers: ["authz/authn","secrets","threat modeling","dependency audit"]
+    outputs: ["threat model","controls","validation report"]
+
+  - name: quality-engineer
+    category: quality-security
+    role: qa
+    triggers: ["test strategy","coverage","e2e"]
+    outputs: ["test plan","test matrix","coverage report"]
+
+  - name: backend-architect
+    category: core-development
+    role: backend
+    triggers: ["api design","db schema","service boundaries"]
+    outputs: ["api spec","schema","migration plan"]
+
+  - name: python-expert
+    category: language-specialists
+    role: language
+    triggers: ["python tasks","scripts","data pipelines"]
+    outputs: ["modules","scripts","docs"]
+
+routing:
+  - when: "ui|component|navbar|table|form"
+    route: ["magic-mcp","frontend-architect","context7","refactoring-expert"]
+  - when: "architecture review|ADR|gate"
+    route: ["architect-reviewer","system-architect","security-engineer","performance-engineer"]
+  - when: "api|db|schema|backend"
+    route: ["backend-architect","security-engineer","quality-engineer"]
+  - when: "perf|latency|cache|load"
+    route: ["performance-engineer"]
+  - when: "security|auth|secrets|threat"
+    route: ["security-engineer","quality-engineer"]
+
+gates:
+  architecture:
+    required: true
+    reviewer: "architect-reviewer"
+    artifacts:
+      - "/reviews/architecture/ARR-<date>.md"
+      - "/docs/adr/ADR-<id>.md"
+  ui:
+    policy: "Magic-first; fallback style = shadcn+tailwind (a11y+responsive)"
+    artifacts:
+      - "/components/magic/"
+      - "/docs/ui-style-guide.md"
