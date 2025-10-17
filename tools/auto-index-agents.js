@@ -15,7 +15,12 @@ const CATEGORIES = [
 ];
 
 function readFileSafe(p) {
-  try { return fs.readFileSync(p, 'utf8'); } catch { return ''; }
+  try { 
+    return fs.readFileSync(p, 'utf8'); 
+  } catch(e) { 
+    console.warn(`Warning: Could not read ${p}: ${e.message}`);
+    return ''; 
+  }
 }
 
 function parseFrontmatter(md) {
