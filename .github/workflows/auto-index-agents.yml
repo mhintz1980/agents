@@ -1,0 +1,44 @@
+name: Auto-Index Agents
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run indexer
+        run: |
+          node tools/auto-index-agents.js
+
+      - name: Commit updated index
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="feat/auto-index-agents"
+          git checkout -B "$BRANCH"
+          git add improved-index.yml
+          git commit -m "chore: auto-index agents (CI)" || echo "Nothing to commit"
+          git push -u origin "$BRANCH"
+
+      - name: Open/Update PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: feat/auto-index-agents
+          title: "chore: auto-index agents (CI)"
+          body: "Automatically generated agent registry from repository contents."
+          base: main
