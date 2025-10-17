@@ -1,6 +1,6 @@
 # Agent registry for orchestration
 version: 1
-generated_at: "now"
+generated_at: "2025-01-15T10:30:00Z"  # or use template: ${GENERATED_AT}
 notes: >
   Source of truth for agent metadata, dispatch rules, and dependencies.
   Keep names stable; update triggers/tools/depends_on as capabilities evolve.
