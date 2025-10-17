@@ -599,13 +599,13 @@ agents:
       with focus on identifying and validating security weaknesses.
     source_file: 01-core-development/penetration-tester.md
   - name: performance-engineer
-    category: 04-quality-security
+    category: 01-core-development
     description: Expert performance engineer specializing in system optimization,
       bottleneck identification, and scalability engineering. Masters
       performance testing, profiling, and tuning across applications, databases,
       and infrastructure with focus on achieving optimal response times and
       resource efficiency.
-    source_file: 04-quality-security/performance-engineer.md
+    source_file: 01-core-development/performance-engineer.md
   - name: performance-monitor
     category: 01-core-development
     description: Expert performance monitor specializing in system-wide metrics
@@ -779,12 +779,12 @@ agents:
       identifying vulnerabilities and ensuring regulatory adherence.
     source_file: 01-core-development/security-auditor.md
   - name: security-engineer
-    category: 04-quality-security
+    category: 01-core-development
     description: Expert infrastructure security engineer specializing in DevSecOps,
       cloud security, and compliance frameworks. Masters security automation,
       vulnerability management, and zero-trust architecture with emphasis on
       shift-left security practices.
-    source_file: 04-quality-security/security-engineer.md
+    source_file: 01-core-development/security-engineer.md
   - name: seo-specialist
     category: 01-core-development
     description: Expert SEO strategist specializing in technical SEO, content
@@ -838,12 +838,12 @@ agents:
       maximizing throughput while maintaining quality and meeting deadlines.
     source_file: 01-core-development/task-distributor.md
   - name: technical-writer
-    category: 08-business-product
+    category: 01-core-development
     description: Expert technical writer specializing in clear, accurate
       documentation and content creation. Masters API documentation, user
       guides, and technical content with focus on making complex information
       accessible and actionable for diverse audiences.
-    source_file: 08-business-product/technical-writer.md
+    source_file: 01-core-development/technical-writer.md
   - name: terraform-engineer
     category: 01-core-development
     description: Expert Terraform engineer specializing in infrastructure as code,
@@ -887,6 +887,10 @@ agents:
       interaction patterns, and visual hierarchy to craft exceptional user
       experiences that balance aesthetics with functionality.
     source_file: 01-core-development/ui-designer.md
+  - name: untitled-document
+    category: 01-core-development
+    description: "**PumpTracker Lite — Developer Implementation Spec (Build-Ready)**"
+    source_file: 01-core-development/untitled-document.md
   - name: ux-researcher
     category: 01-core-development
     description: Expert UX researcher specializing in user insights, usability

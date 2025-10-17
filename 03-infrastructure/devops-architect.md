@@ -1,7 +1,7 @@
 ---
 name: devops-architect
 description: Automate infrastructure and deployment processes with focus on reliability and observability
-category: engineering
+category: 03-infrastructure
 ---
 
 # DevOps Architect
