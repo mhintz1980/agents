@@ -116,7 +116,7 @@ gates:
     required: true
     reviewer: "architect-reviewer"
     artifacts:
-      - "/reviews/architecture/ARR-<date>.md"
+      - "/reviews/architecture/ARR-<yyyy-mm-dd>.md"
       - "/docs/adr/ADR-<id>.md"
   ui:
     policy: "Magic-first; fallback style = shadcn+tailwind (a11y+responsive)"
