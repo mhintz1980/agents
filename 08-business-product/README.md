@@ -2,7 +2,7 @@
 
 Business & Product subagents bridge the gap between technology and business value. These specialists understand both technical implementation and business strategy, helping teams build products that users love and businesses thrive on. From product strategy to customer success, from business analysis to technical writing, they ensure technology serves real business needs and delivers measurable value.
 
-## <¯ When to Use Business & Product Subagents
+## When to Use Business & Product Subagents
 
 Use these subagents when you need to:
 - **Define product strategy** and roadmaps
@@ -14,12 +14,19 @@ Use these subagents when you need to:
 - **Manage projects** effectively with Agile methods
 - **Bridge technical and business** communication
 
-## =Ë Available Subagents
+## Available Subagents
 
 ### [**business-analyst**](business-analyst.md) - Requirements specialist
 Business analysis expert translating business needs into technical requirements. Masters stakeholder communication, process analysis, and solution design. Ensures technology solves real business problems.
 
 **Use when:** Gathering requirements, analyzing business processes, defining specifications, creating user stories, or bridging business-technical communication.
+
+### [**requirements-analyst**](requirements-analyst.md) - Requirements discovery strategist
+Transforms ambiguous product ideas into precise, testable specifications through structured elicitation, stakeholder alignment, and meticulous acceptance criteria.
+
+**Use when:** You need to clarify scope, turn executive ideas into actionable backlogs, produce PRDs, or ensure success metrics and constraints are captured before development starts.
+
+
 
 ### [**content-marketer**](content-marketer.md) - Content marketing specialist
 Content expert creating compelling technical and marketing content. Masters SEO, content strategy, and audience engagement. Drives growth through strategic content creation.
@@ -40,6 +47,13 @@ Legal expert navigating technology law and compliance. Masters privacy regulatio
 Product visionary defining what to build and why. Expert in market analysis, user needs, and product strategy. Drives product success from conception to market leadership.
 
 **Use when:** Defining product vision, prioritizing features, conducting market research, creating roadmaps, or making product decisions.
+
+### [**business-panel-experts**](business-panel-experts.md) - Multi-framework strategy council
+Brings a moderated panel of renowned business thinkers to interrogate market moves from multiple lenses, surfacing disruptive opportunities, competitive threats, and systemic risks.
+
+**Use when:** Evaluating market shifts, stress-testing strategic bets, preparing board materials, or balancing competing stakeholder viewpoints with evidence-backed recommendations.
+
+
 
 ### [**project-manager**](project-manager.md) - Project management specialist
 Project management expert ensuring successful delivery. Masters Agile methodologies, resource planning, and stakeholder management. Keeps projects on time, on budget, and on target.
@@ -66,11 +80,13 @@ User research specialist uncovering user needs and behaviors. Expert in research
 
 **Use when:** Conducting user interviews, running usability tests, analyzing user behavior, creating personas, or validating product decisions.
 
-## =€ Quick Selection Guide
+## Quick Selection Guide
 
 | If you need to... | Use this subagent |
 |-------------------|-------------------|
 | Define requirements | **business-analyst** |
+| Clarify ambiguous ideas | **requirements-analyst** |
+| Run multi-framework strategy debates | **business-panel-experts** |
 | Create content | **content-marketer** |
 | Retain customers | **customer-success-manager** |
 | Handle legal matters | **legal-advisor** |
@@ -81,7 +97,7 @@ User research specialist uncovering user needs and behaviors. Expert in research
 | Write documentation | **technical-writer** |
 | Research users | **ux-researcher** |
 
-## =¡ Common Business Patterns
+## Common Business Patterns
 
 **Product Development:**
 - **product-manager** for vision
@@ -107,7 +123,7 @@ User research specialist uncovering user needs and behaviors. Expert in research
 - **technical-writer** for self-service
 - **sales-engineer** for adoption
 
-## <¬ Getting Started
+## Getting Started
 
 1. **Identify business objectives** clearly
 2. **Choose specialists** that align with goals
@@ -115,7 +131,7 @@ User research specialist uncovering user needs and behaviors. Expert in research
 4. **Foster collaboration** between specialists
 5. **Measure business impact** continuously
 
-## =Ú Best Practices
+## Best Practices
 
 - **User-centric approach:** Always consider the end user
 - **Data-driven decisions:** Measure and validate

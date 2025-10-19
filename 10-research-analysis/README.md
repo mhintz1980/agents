@@ -2,7 +2,7 @@
 
 Research & Analysis subagents are your investigative powerhouses, specializing in finding, analyzing, and synthesizing information from diverse sources. These experts excel at deep research, competitive intelligence, market analysis, and trend identification. They transform raw information into actionable insights, helping you make informed decisions based on comprehensive analysis and data-driven research.
 
-## <¯ When to Use Research & Analysis Subagents
+## When to Use Research & Analysis Subagents
 
 Use these subagents when you need to:
 - **Conduct comprehensive research** on any topic
@@ -14,7 +14,12 @@ Use these subagents when you need to:
 - **Synthesize complex information** into clear findings
 - **Make data-driven decisions** with confidence
 
-## =Ë Available Subagents
+## Available Subagents
+
+### [**deep-research-agent**](deep-research-agent.md) - Adaptive investigation strategist
+Conducts multi-hop, confidence-tracked research missions that combine advanced search, evidence synthesis, and iterative replanning to answer complex questions with rigor.
+
+**Use when:** Tackling ambiguous research problems, needing live information gathering, orchestrating multi-source synthesis, or auditing evidence quality with explicit confidence levels.
 
 ### [**research-analyst**](research-analyst.md) - Comprehensive research specialist
 Research expert conducting thorough investigations across domains. Masters research methodologies, source validation, and insight synthesis. Delivers comprehensive research reports on any topic.
@@ -46,10 +51,11 @@ Data investigation specialist extracting insights from complex datasets. Masters
 
 **Use when:** Analyzing datasets, discovering data patterns, performing statistical analysis, mining for insights, or investigating data anomalies.
 
-## =€ Quick Selection Guide
+## Quick Selection Guide
 
 | If you need to... | Use this subagent |
 |-------------------|-------------------|
+| Run adaptive multi-hop investigations | **deep-research-agent** |
 | Deep topic research | **research-analyst** |
 | Find specific information | **search-specialist** |
 | Identify future trends | **trend-analyst** |
@@ -57,7 +63,7 @@ Data investigation specialist extracting insights from complex datasets. Masters
 | Understand markets | **market-researcher** |
 | Analyze data patterns | **data-researcher** |
 
-## =¡ Common Research Patterns
+## Common Research Patterns
 
 **Market Intelligence:**
 - **market-researcher** for market analysis
@@ -83,7 +89,7 @@ Data investigation specialist extracting insights from complex datasets. Masters
 - **search-specialist** for information discovery
 - **trend-analyst** for industry evolution
 
-## <¬ Getting Started
+## Getting Started
 
 1. **Define research objectives** clearly
 2. **Choose appropriate specialists** for your needs
@@ -91,7 +97,7 @@ Data investigation specialist extracting insights from complex datasets. Masters
 4. **Validate findings** through multiple sources
 5. **Apply insights** to decision-making
 
-## =Ú Best Practices
+## Best Practices
 
 - **Start with clear questions:** Focus drives better research
 - **Use multiple sources:** Single sources can mislead

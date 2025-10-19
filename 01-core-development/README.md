@@ -70,6 +70,21 @@ Specialist in WordPress ecosystem who builds everything from simple blogs to ent
 
 **Use when:** Building WordPress sites, developing custom themes, creating plugins, implementing WooCommerce solutions, or optimizing WordPress performance.
 
+### [**backend-architect**](backend-architect.md) - Fault-tolerant backend strategist
+Designs resilient service architectures focused on data integrity, security, and observability. Guides schema design, API patterns, and scalability strategies that keep mission-critical systems reliable under load.
+
+**Use when:** You need to blueprint new backend platforms, stress-test API designs, document authentication models, or codify reliability and throughput requirements before implementation.
+
+### [**frontend-architect**](frontend-architect.md) - Design system governance leader
+Architects accessible, high-performance component libraries with strict adherence to WCAG and Core Web Vitals. Defines design tokens, contribution workflows, and implementation patterns for modern frontend ecosystems.
+
+**Use when:** Establishing or refactoring design systems, governing multi-team UI contributions, solving performance regressions, or guaranteeing accessibility guardrails across products.
+
+### [**system-architect**](system-architect.md) - Long-horizon platform designer
+Crafts scalable system topologies, interface contracts, and evolution roadmaps that balance current delivery with future adaptability. Brings rigor to architectural decision records and migration strategies.
+
+**Use when:** Evaluating architectural patterns, planning 10x scale scenarios, sequencing legacy-to-modern transitions, or aligning technology choices with long-term strategy.
+
 ## 🚀 Quick Selection Guide
 
 | If you need to... | Use this subagent |
@@ -85,6 +100,9 @@ Specialist in WordPress ecosystem who builds everything from simple blogs to ent
 | Build a distributed system | **microservices-architect** |
 | Add real-time features | **websocket-engineer** |
 | Create a WordPress site | **wordpress-master** |
+| Design resilient backend architecture | **backend-architect** |
+| Govern enterprise UI design systems | **frontend-architect** |
+| Plan long-term platform evolution | **system-architect** |
 
 ## 💡 Common Combinations
 

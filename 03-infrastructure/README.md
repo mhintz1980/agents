@@ -2,7 +2,7 @@
 
 Infrastructure subagents are your DevOps and cloud computing experts, specializing in building, deploying, and maintaining modern infrastructure. These specialists handle everything from CI/CD pipelines to cloud architecture, from container orchestration to database administration. They ensure your applications run reliably, scale efficiently, and deploy seamlessly across any environment.
 
-## <¯ When to Use Infrastructure Subagents
+## When to Use Infrastructure Subagents
 
 Use these subagents when you need to:
 - **Design cloud architectures** for scalability and reliability
@@ -14,7 +14,7 @@ Use these subagents when you need to:
 - **Respond to incidents** and ensure high availability
 - **Secure infrastructure** and implement best practices
 
-## =Ë Available Subagents
+## Available Subagents
 
 ### [**cloud-architect**](cloud-architect.md) - AWS/GCP/Azure specialist
 Multi-cloud expert designing scalable, cost-effective cloud solutions. Masters cloud-native architectures, serverless patterns, and cloud migration strategies. Ensures optimal resource utilization across major cloud providers.
@@ -35,6 +35,11 @@ Deployment expert automating application releases across environments. Masters b
 DevOps practitioner bridging development and operations. Expert in CI/CD pipelines, automation tools, and DevOps culture. Accelerates delivery while maintaining stability and security.
 
 **Use when:** Building CI/CD pipelines, automating workflows, implementing DevOps practices, setting up development environments, or improving deployment velocity.
+
+### [**devops-architect**](devops-architect.md) - Delivery pipeline strategist
+Architects end-to-end delivery platforms with resilience, observability, and automation baked in. Designs CI/CD blueprints, infrastructure-as-code governance, and reliability practices that scale with the organization.
+
+**Use when:** Designing or overhauling deployment platforms, codifying delivery policies, integrating security gates, or orchestrating multi-region rollout and recovery strategies.
 
 ### [**devops-incident-responder**](devops-incident-responder.md) - DevOps incident management
 Incident response specialist for DevOps environments. Masters troubleshooting, root cause analysis, and incident management. Minimizes downtime and prevents future incidents through systematic approaches.
@@ -76,7 +81,7 @@ IaC specialist using Terraform for infrastructure automation. Masters module des
 
 **Use when:** Writing Terraform code, designing IaC architecture, managing Terraform state, creating reusable modules, or automating infrastructure provisioning.
 
-## =€ Quick Selection Guide
+## Quick Selection Guide
 
 | If you need to... | Use this subagent |
 |-------------------|-------------------|
@@ -84,6 +89,7 @@ IaC specialist using Terraform for infrastructure automation. Masters module des
 | Manage databases | **database-administrator** |
 | Automate deployments | **deployment-engineer** |
 | Build CI/CD pipelines | **devops-engineer** |
+| Architect delivery platforms | **devops-architect** |
 | Handle DevOps incidents | **devops-incident-responder** |
 | Manage critical outages | **incident-responder** |
 | Deploy with Kubernetes | **kubernetes-specialist** |
@@ -93,7 +99,7 @@ IaC specialist using Terraform for infrastructure automation. Masters module des
 | Implement SRE practices | **sre-engineer** |
 | Write infrastructure code | **terraform-engineer** |
 
-## =¡ Common Infrastructure Patterns
+## Common Infrastructure Patterns
 
 **Cloud-Native Application:**
 - **cloud-architect** for architecture design
@@ -119,7 +125,7 @@ IaC specialist using Terraform for infrastructure automation. Masters module des
 - **sre-engineer** for prevention
 - **security-engineer** for security incidents
 
-## <¬ Getting Started
+## Getting Started
 
 1. **Assess your infrastructure needs** and current challenges
 2. **Choose the appropriate specialist** based on your requirements
@@ -127,7 +133,7 @@ IaC specialist using Terraform for infrastructure automation. Masters module des
 4. **Share existing configurations** if applicable
 5. **Follow the specialist's recommendations** for best practices
 
-## =Ú Best Practices
+## Best Practices
 
 - **Start with architecture:** Design before implementation
 - **Automate everything:** Manual processes don't scale

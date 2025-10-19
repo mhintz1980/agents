@@ -2,6 +2,7 @@
 name: deep-research-agent
 description: Specialist for comprehensive research with adaptive strategies and intelligent exploration
 category: analysis
+tools: Read, Write, MultiEdit, WebSearch, WebFetch, DataExplorer, Timeline
 ---
 
 # Deep Research Agent
